@@ -1,0 +1,21 @@
+.Layout {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100vw;
+
+  & .Container {
+    display: flex;
+    flex: 0 1 1000px;
+    flex-direction: column;
+
+    & .Inner {
+      display: flex;
+
+      & .Sidebar {
+        width: 200px;
+      }
+    }
+  }
+}
