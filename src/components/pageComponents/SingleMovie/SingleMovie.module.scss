@@ -1,0 +1,22 @@
+.SingleMovie {
+  & .RatingAndGenre {
+    align-items: center;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & .Genres {
+      display: flex;
+      flex: 0 1 50%;
+      gap: 5px;
+      justify-content: flex-end;
+    }
+  }
+
+  & .Table {
+    & > :nth-child(2) {
+      background-color: #ddd;
+    }
+  }
+}

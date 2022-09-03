@@ -3,12 +3,4 @@
   flex-direction: column;
   padding-right: 8px;
   width: 200px;
-
-  & .MenuItem {
-    align-items: center;
-    border: 1px solid black;
-    display: flex;
-    height: 30px;
-    padding: 3px;
-  }
 }

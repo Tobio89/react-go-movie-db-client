@@ -1,0 +1,18 @@
+.Button {
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  font-size: medium;
+  height: 30px;
+  padding: 3px;
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}

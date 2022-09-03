@@ -12,6 +12,11 @@
 
     & .Inner {
       display: flex;
+      width: 100%;
+
+      & .App {
+        width: 100%;
+      }
 
       & .Sidebar {
         width: 200px;

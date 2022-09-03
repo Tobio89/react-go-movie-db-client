@@ -1,17 +1,31 @@
 import React from "react";
+import Button from "../Button";
 
 import styles from "./Sidebar.module.scss";
 
-const items = ["Home", "Movies", "Genres", "GraphQL"];
+const items = [
+  {
+    label: "Home",
+    link: "/",
+  },
+  {
+    label: "Movies",
+    link: "/movies",
+  },
+  {
+    label: "Genres",
+    link: "/genres",
+  },
+];
 
 function Sidebar() {
   return (
     <div className={styles.Sidebar}>
       {items.map((item) => {
         return (
-          <div key={item} className={styles.MenuItem}>
-            {item}
-          </div>
+          <Button key={item.label} linkTo={item.link}>
+            {item.label}
+          </Button>
         );
       })}
     </div>
